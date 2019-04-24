@@ -1,5 +1,5 @@
 ---
-- name: install Pure-FTPd
+- name: install pure-ftpd
   apt:
     name: "{{ packages }}"
     state: latest
