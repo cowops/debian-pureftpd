@@ -1,0 +1,6 @@
+---
+- name: start pureftpd
+  action: service name=pure-ftpd state=started enabled=yes
+
+- name: restart pureftpd
+  action: service name=pure-ftpd state=restarted enabled=yes

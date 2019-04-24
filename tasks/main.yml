@@ -1,0 +1,6 @@
+---
+- name: install Pure-FTPd
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - pure-ftpd
+  notify: restart pureftpd
